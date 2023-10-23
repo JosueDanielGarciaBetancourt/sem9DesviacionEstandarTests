@@ -21,3 +21,4 @@ if __name__ == "__main__":
     media = calcular_media(numeros)
     resultado = desviacion_estandar(numeros, media)
     print("La desviación estandár es: {}".format(resultado))
+    input()
