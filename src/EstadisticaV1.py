@@ -1,6 +1,5 @@
 from math import sqrt
 
-
 def desviacion_estandar(valores, media):
     suma = 0
     for valor in valores:

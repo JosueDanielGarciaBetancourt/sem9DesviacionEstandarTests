@@ -1,6 +1,7 @@
 from math import sqrt
 class ExceptionDatos(Exception):
     pass
+
 class Estadistica:
 
     def __init__(self, numeros):
@@ -42,10 +43,6 @@ class Estadistica:
             return suma / len(self.__numeros)
         else:
             raise ExceptionDatos
-
-    def __str__(self):
-        return self.__numeros
-
 
 if __name__ == "__main__":
     try:

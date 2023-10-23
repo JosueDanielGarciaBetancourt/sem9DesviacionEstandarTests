@@ -1,8 +1,7 @@
 import math
 import unittest
 
-from src.Estadistica import Estadistica,ExceptionDatos
-
+from src.Estadistica import Estadistica, ExceptionDatos
 
 class PruebaEstadistica(unittest.TestCase):
     def setUp(self):
@@ -13,12 +12,12 @@ class PruebaEstadistica(unittest.TestCase):
 
     # Pruebas para media
     def test_media_vacio_retornaExcepcion(self):
-        self.estadistica.numeros=[]
+        self.estadistica.numeros = []
         with self.assertRaises(ExceptionDatos):
             self.estadistica.calcular_media()
 
     def test_media_noNumero_retornaExcepcion(self):
-        self.estadistica.numeros=[4, 5, "a", 10]
+        self.estadistica.numeros = [4, 5, "a", 10]
         with self.assertRaises(ExceptionDatos):
             self.estadistica.calcular_media()
 
@@ -101,4 +100,3 @@ class PruebaEstadistica(unittest.TestCase):
 
             # Assert
             self.assertAlmostEqual(resultadoActual, resultadoEsperado, places=3)
-
