@@ -44,7 +44,7 @@ class Estadistica:
         else:
             raise ExceptionDatos
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     try:
         datos = [7, 3, 13, 17, 10, 8, 12, 9]
         estadistica = Estadistica(datos)
@@ -54,3 +54,4 @@ if __name__ == "__main__":
         print(estadistica.desviacion_estandar())
     except ExceptionDatos:
         print("Sin datos")
+    input()"""
